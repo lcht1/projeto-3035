@@ -99,13 +99,15 @@ body {
 }
 
 .home-container {
-    /* position: relative;
-    top: 10rem; */
     color: #fff;
     font-weight: 900;
 
     display: flex;
     align-content: center;
+}
+
+.toggle {
+    display: none;
 }
 
 .yellow-word {
@@ -302,6 +304,10 @@ textarea {
 }
 
 @media (max-width: 780px) {
+    .toggle {
+        display: block;
+    }
+
     nav .menu {
         opacity: 0;
         visibility: hidden;
@@ -311,7 +317,10 @@ textarea {
     
     nav .menu ul {
         display: none;
+        text-align: center;
     }
+
+
     
     /* show nav */
     nav.show .menu {
